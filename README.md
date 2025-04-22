@@ -26,13 +26,15 @@ INFO 04-22 13:22:12 [loggers.py:87] Engine 000: Avg prompt throughput: 0.0 token
 ```python
 uvicorn server:app --host 0.0.0.0 --port 8090
 ```
+<details> <summary>Click to expand example</summary>
 INFO:     Started server process [2887]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
+</details>
 
 **Run the app:**
-```
+```python
 python client.py "<prompt>" <session_id
 ```
 
@@ -42,6 +44,6 @@ python client.py "<prompt>" <session_id
 
 
 **Running Example:**
-```
+```python
 python client.py "תכתוב סיפור בן 100 מילים" 1
 ```
