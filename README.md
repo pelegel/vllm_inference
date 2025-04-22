@@ -47,3 +47,7 @@ python client.py "<prompt>" <session_id
 ```python
 python client.py "תכתוב סיפור בן 100 מילים" 1
 ```
+
+worked with:
+1.  NVIDIA-SMI 565.77                 Driver Version: 565.77         CUDA Version: 12.7
+2.  NVIDIA-SMI 570.133.07             Driver Version: 570.133.07     CUDA Version: 12.8 
