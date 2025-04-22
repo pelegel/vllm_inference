@@ -1,4 +1,7 @@
-# Hosting Gemma3 27b model using FastAPI #
+# Hosting Gemma3 27b model using vLLM #
+
+This inference is based on "gaunernst/gemma-3-27b-it-int4-awq" model from HuggingFace.
+
 
 **To run the server:**
 ```
