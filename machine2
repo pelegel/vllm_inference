@@ -1,0 +1,64 @@
+(* echo "=== Memory ==="; free -h; echo
+echo "=== Disk Usage ==="; df -hT | grep -v tmpfs; echo
+echo "=== GPU ==="; nvidia-smi || echo "No NVIDIA GPU / nvidia-smi not found"; echo
+echo "=== CUDA Version ==="; nvcc --version 2>/dev/null || echo "nvcc not found (CUDA likely not installed)"; echo
+echo "=== Load Average ==="; uptime; echo *)
+
+
+=== CPU ===
+CPU(s):                          256
+On-line CPU(s) list:             0-254
+Off-line CPU(s) list:            255
+Model name:                      AMD EPYC 7B12 64-Core Processor
+Thread(s) per core:              2
+Core(s) per socket:              64
+NUMA node0 CPU(s):               0-63,128-191
+NUMA node1 CPU(s):               64-127,192-254
+
+=== Memory ===
+               total        used        free      shared  buff/cache   available
+Mem:           2.0Ti        57Gi       1.2Ti        20Gi       689Gi       1.9Ti
+Swap:          7.2Gi       3.0Mi       7.2Gi
+
+=== Disk Usage ===
+Filesystem     Type     Size  Used Avail Use% Mounted on
+overlay        overlay  106G   32G   75G  31% /
+/dev/nvme0n1p3 xfs      3.7T  1.6T  2.1T  44% /etc/hosts
+/dev/nvme0n1p2 ext4      32G   28G  2.5G  92% /usr/bin/nvidia-smi
+
+=== GPU ===
+Tue Apr 22 13:48:29 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.133.07             Driver Version: 570.133.07     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4090        On  |   00000000:A1:00.0 Off |                  Off |
+|  0%   50C    P8             39W /  450W |   24045MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 4090        On  |   00000000:A2:00.0 Off |                  Off |
+|  0%   50C    P8             24W /  450W |   24045MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2119      C   /workspace/vllm_venv/bin/python       24036MiB |
+|    1   N/A  N/A            2137      C   /workspace/vllm_venv/bin/python       24036MiB |
++-----------------------------------------------------------------------------------------+
+
+=== CUDA Version ===
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Mon_Apr__3_17:16:06_PDT_2023
+Cuda compilation tools, release 12.1, V12.1.105
+Build cuda_12.1.r12.1/compiler.32688072_0
+
+=== Load Average ===
+ 13:48:29 up 235 days,  4:34,  0 users,  load average: 22.59, 23.44, 18.13
