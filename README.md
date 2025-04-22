@@ -3,14 +3,14 @@
 This inference is based on "gaunernst/gemma-3-27b-it-int4-awq" model from HuggingFace.
 
 **Create venv and install requirements:**
-```
+```python
 python -m venv vllm_venv
 source vllm_venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
 **Start the vLLM server:**
-```
+```python
 vllm serve "gaunernst/gemma-3-27b-it-int4-awq"   --max-model-len 131072   --tensor-parallel-size 2
 ```
 <details> <summary>Click to expand example</summary>
@@ -23,7 +23,7 @@ INFO 04-22 13:22:12 [loggers.py:87] Engine 000: Avg prompt throughput: 0.0 token
 
 
  **Start the FastAPI server:**
-```
+```python
 uvicorn server:app --host 0.0.0.0 --port 8090
 ```
 INFO:     Started server process [2887]
