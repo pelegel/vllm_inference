@@ -5,6 +5,8 @@ This inference is based on "gaunernst/gemma-3-27b-it-int4-awq" model from Huggin
 
 **To run the server:**
 ```
+# python3 -m vllm.entrypoints.openai.api_server --model gaunernst/gemma-3-27b-it-int4-awq --port 8000
+vllm serve "gaunernst/gemma-3-27b-it-int4-awq"   --max-model-len 131072   --tensor-parallel-size 2
 uvicorn server:app --host 0.0.0.0 --port 8090
 ```
 
