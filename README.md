@@ -38,6 +38,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
 
 
 **Run the app:**
+1. ***simple client:***
 ```python
 python client.py "<prompt>" <session_id
 ```
@@ -45,13 +46,18 @@ python client.py "<prompt>" <session_id
 * Replace "prompt" with the requested user's input.
 * Replace "session_id" with requested user ID to avoid shared conversation history between different users.
 
-
-
 **Running Example:**
 ```python
 python client.py "תכתוב סיפור בן 100 מילים" 1
 ```
 
-W orked with:
+***chat app:***
+```python
+python chat.py 
+```
+
+
+
+Worked with:
 1.  NVIDIA-SMI 565.77                 Driver Version: 565.77         CUDA Version: 12.7
 2.  NVIDIA-SMI 570.133.07             Driver Version: 570.133.07     CUDA Version: 12.8 
