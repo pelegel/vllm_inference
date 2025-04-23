@@ -51,7 +51,7 @@ python client.py "<prompt>" <session_id
 python client.py "תכתוב סיפור בן 100 מילים" 1
 ```
 
-***chat app:***
+2. ***chat app:***
 ```python
 python chat.py 
 ```
