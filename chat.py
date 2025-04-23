@@ -27,7 +27,7 @@ def stream_chat(prompt, session_id):
 
     session_id = get_or_create_session(session_id)
 
-    # Save user's response in conversation history  
+    # Save user's prompt in conversation history  
     conversations[session_id]["messages"].append({"role": "user", "content": [{"type": "text", "text": prompt}]})
 
     response = ""
