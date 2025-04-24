@@ -46,16 +46,16 @@ python client.py "<prompt>" <session_id
 * Replace "prompt" with the requested user's input.
 * Replace "session_id" with requested user ID to avoid shared conversation history between different users.
 
-**Running Example:**
-```python
-python client.py "תכתוב סיפור בן 100 מילים" 1
-```
 
 2. ***chat app:***
 ```python
 python chat.py 
 ```
 
+3. ***concurrency simulation:***
+```python
+python simulation.py 
+```
 
 
 Worked with:
