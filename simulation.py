@@ -140,3 +140,9 @@ if __name__ == "__main__":
     print("All threads done.")
 
     plot_durations(times, tokens)
+
+
+
+##### OUTPUT #####
+# Average duration for 25 users, 25 simultaneously:: 18.264965410232545
+# Average T/s for 25 users, 25 simultaneously: 27.103254174391413
