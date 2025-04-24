@@ -85,7 +85,6 @@ def plot_durations(times, tokens, filename1="/workspace/durations.png", filename
     plt.ylabel("t/s")
     plt.title(f"Generation Speed for {num_users} Users, {max_concurrent} Simultaneously")
     plt.savefig(filename2)
-    print(f"Plot saved as {filename2}")
     print(f"Average T/s for {num_users} users, {max_concurrent} simultaneously: {np.mean(tokens)/np.mean(times)}")
 
 
