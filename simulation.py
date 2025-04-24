@@ -56,12 +56,12 @@ def stream_chat(prompt, i):
     toks = len(tokenizer.encode(response))
     tokens.append(toks)
 
-    print(f"User {i} finished in {duration:.2f} seconds, {toks} T/s \n", end='', flush=True)
+    print(f"User {i} finished in {duration:.2f} seconds, {toks/duration} T/s \n", end='', flush=True)
 
 
 
     with open(f"/workspace/User{i}.txt", "w") as f:
-        f.write(response + "\n")
+        f.write(f"\n{response} \n")
         f.write(f"⏱️ Took {duration:.2f} seconds \n")
         f.write(f"Number of tokens: {str(toks)} \n")
         f.write(f"T/s: {str(toks/duration)}")
@@ -77,7 +77,6 @@ def plot_durations(times, tokens, filename1="/workspace/durations.png", filename
     plt.ylabel("Time (seconds) to output")
     plt.title("Generation Duration for {num_users} Users, {max_concurrent} Simultaneously")
     plt.savefig(filename1)
-    print(f"Plot saved as {filename1}")
     print(f"Average duration for {num_users} users, {max_concurrent} simultaneously:: {np.mean(times)}")
 
     rates = [t / s for t, s in zip(tokens, times)]
