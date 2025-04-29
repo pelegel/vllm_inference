@@ -1,0 +1,28 @@
+
+**User 0 Prompt 1:** duration: 13.214761734008789, T/s: 26.863897143630776 total context length: 2998 
+
+**User 0 Prompt 2:** duration: 31.3398220539093, T/s: 49.234485037783664 total context length: 4634 
+
+**User 0 Prompt 3:** duration: 30.442745447158813, T/s: 47.56469821400882 total context length: 6170 
+
+**User 0 Prompt 4:** duration: 38.48209595680237, T/s: 49.19170728447237 total context length: 8153 
+
+**User 0 Prompt 5:** duration: 44.06749081611633, T/s: 48.01725627695911 total context length: 10351 
+
+**User 0 Prompt 6:** duration: 36.1640739440918, T/s: 49.22011836254423 total context length: 12230 
+
+**User 0 Prompt 7:** duration: 40.49138569831848, T/s: 48.25717782439699 total context length: 14275 
+
+**User 0 Prompt 8:** duration: 39.62590932846069, T/s: 47.99889850436613 total context length: 16262 
+
+**User 0 Prompt 9:** duration: 27.237297534942627, T/s: 49.12381627742197 total context length: 17687 
+
+**User 0 Prompt 10:** duration: 26.925660371780396, T/s: 48.35535998086677 total context length: 19080 
+
+**User 0 Prompt 11:** duration: 38.435697078704834, T/s: 49.25109062348215 total context length: 21263 
+
+**User 0 Prompt 12:** duration: 46.14527750015259, T/s: 49.25747818923581 total context length: 23680 
+
+**User 0 Prompt 13:** duration: 50.10733890533447, T/s: 49.27421918502936 total context length: 26351 
+
+**User 0 Prompt 14:** duration: 34.64166259765625, T/s: 49.16045802360594 total context length: 28245 
