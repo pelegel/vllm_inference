@@ -1,22 +1,9 @@
 # 📝 TODO List
 
 ## 🔧 Development Tasks
-- [ ] Add token count and t/s generation speed
-- [ ] Add time for each prompt and response
-- [ ] Try with another model
+- [ ] Search for a model with a greater context length and evaluate context_length_simulation
+- [ ] Quantize the base model and evaluate context_length_simulation
 
 
 ---
 
-## 🧪 Testing
-
-
-
----
-
-## 📦 Deployment
-
-
----
-
-## 🧹 Maintenance
