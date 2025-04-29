@@ -1,7 +1,7 @@
 # This code simulates multiple users infering the model in a chat format, keeping the chat history as context.
 # As context increases, generation speed decreases. The more users infering the model at the same time, the larger the generation speed decrease.
 # "gaunernst/gemma-3-27b-it-int4-awq" allowed a context length of around ~27k-28k tokens.
-# Simulation results are available in "eval/context_length_simulation"
+# Simulation results are available in "eval/context_length_simulation/gaunernst-gemma-3-27b-it-int4-awq"
 
 import subprocess
 import requests
