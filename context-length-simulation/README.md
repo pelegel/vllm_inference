@@ -1,6 +1,6 @@
 # Hosting Gemma3 27b model using vLLM #
 
-This inference is based on "gaunernst/gemma-3-12b-it-int4-awq" model from HuggingFace.
+This inference is based on "gaunernst/gemma-3-12b-it-qat-autoawq" model from HuggingFace.
 
 **Create venv and install requirements:**
 ```python
