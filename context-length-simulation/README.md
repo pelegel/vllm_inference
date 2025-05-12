@@ -11,7 +11,7 @@ python -m pip install -r requirements.txt
 
 **Start the vLLM server:**
 ```python
-python3 -m vllm.entrypoints.openai.api_server   --model gaunernst/gemma-3-12b-it-int4-awq --max-model-len 131072   --tensor-parallel-size 2 | grep -Ev "Received request chatcmpl|Added request chatcmpl|HTTP/1.1\" 200 OK"
+python3 -m vllm.entrypoints.openai.api_server   --model gaunernst/gemma-3-12b-it-qat-autoawq --max-model-len 131072   --tensor-parallel-size 2 | grep -Ev "Received request chatcmpl|Added request chatcmpl|HTTP/1.1\" 200 OK"
 ```
 The vLLM server will be ready for launch when the following logs appear:
 ```
